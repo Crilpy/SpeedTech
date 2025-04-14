@@ -9,11 +9,11 @@ const Orders = () => {
 
   const translateStatus = (status) => {
     switch (status.toLowerCase()) {
-      case 'Order Placed': return 'Поръчката е приета';
-      case 'Packing': return 'Опакова се';
-      case 'Shipped': return 'Поръчката е изпратена';
-      case 'Out for delivery': return 'Доставя се от куриер';
-      case 'Delivered': return 'Доставена';
+      case 'order placed': return 'Поръчката е приета';
+      case 'packing': return 'Опакова се';
+      case 'shipped': return 'Поръчката е изпратена';
+      case 'out for delivery': return 'Доставя се от куриер';
+      case 'delivered': return 'Доставена';
       default: return status;
     }
   };
