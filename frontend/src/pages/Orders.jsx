@@ -11,7 +11,8 @@ const Orders = () => {
     switch (status.toLowerCase()) {
       case 'order placed': return 'Поръчката е приета';
       case 'packing': return 'Опакова се';
-      case 'shipped': return 'Поръчката е изпратена'; // Corrected case from 'ship' to 'shipped'
+      case 'shipped': return 'Поръчката е изпратена';
+      case 'ship': return 'Поръчката е изпратена'; // Added case for 'ship'
       case 'out for delivery': return 'Доставя се от куриер';
       case 'delivered': return 'Доставена';
       default: return status;
