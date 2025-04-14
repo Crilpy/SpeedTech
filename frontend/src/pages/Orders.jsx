@@ -45,6 +45,7 @@ const Orders = () => {
         let allOrdersItem = [];
         response.data.orders.forEach((order) => {
           order.items.forEach((item) => {
+            console.log('Order status:', order.status); // Debug log to check status values
             allOrdersItem.push({
               ...item,
               status: order.status,
